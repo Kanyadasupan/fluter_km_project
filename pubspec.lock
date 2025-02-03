@@ -292,18 +292,18 @@ packages:
     dependency: transitive
     description:
       name: path_provider
-      sha256: fec0d61223fba3154d87759e3cc27fe2c8dc498f6386c6d6fc80d1afdd1bf378
+      sha256: "50c5dd5b6e1aaf6fb3a78b33f6aa3afca52bf903a8a5298f53101fdaee55bbcd"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.4"
+    version: "2.1.5"
   path_provider_android:
     dependency: transitive
     description:
       name: path_provider_android
-      sha256: a248d8146ee5983446bf03ed5ea8f6533129a12b11f12057ad1b4a67a2b3b41d
+      sha256: "4adf4fd5423ec60a29506c76581bc05854c55e3a0b72d35bb28d661c9686edf2"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.4"
+    version: "2.2.15"
   path_provider_foundation:
     dependency: transitive
     description:
@@ -368,6 +368,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.1"
+  salomon_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: salomon_bottom_bar
+      sha256: e20abf2e449749432223a8b4e6647c212eef6c2b638e0ed8cc92eff9529c2b48
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -487,4 +495,4 @@ packages:
     version: "3.1.3"
 sdks:
   dart: ">=3.6.0 <4.0.0"
-  flutter: ">=3.19.2"
+  flutter: ">=3.24.0"

@@ -1,75 +1,76 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_km_project/views/home02_ui.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
-class IntroductionScreenUI extends StatefulWidget {
-  const IntroductionScreenUI({super.key});
+class IntroScreenUI extends StatefulWidget {
+  const IntroScreenUI({super.key});
 
   @override
-  State<IntroductionScreenUI> createState() => _IntroductionScreenUIState();
+  State<IntroScreenUI> createState() => _IntroScreenUIState();
 }
 
-class _IntroductionScreenUIState extends State<IntroductionScreenUI> {
+class _IntroScreenUIState extends State<IntroScreenUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IntroductionScreen(
-        pages: [
-          PageViewModel(
-            title: 'SAU Hello',
-            body: 'Wellcome To Thailand',
-            image: Image.asset(
-              'assets/images/pic1.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-            ),
+        body: IntroductionScreen(
+      pages: [
+        PageViewModel(
+          title: "Page 1",
+          body: "I love working overtime",
+          image: Image.asset(
+            "assets/images/pic01.png",
+            width: MediaQuery.of(context).size.width * 0.6,
           ),
-          PageViewModel(
-            title: 'SAU Hello',
-            body: 'Wellcome To Thailand',
-            image: Image.asset(
-              'assets/images/pic2.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-            ),
-          ),
-          PageViewModel(
-            title: 'SAU Hello',
-            body: 'Wellcome To Thailand',
-            image: Image.asset(
-              'assets/images/pic3.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-            ),
-          ),
-          PageViewModel(
-            title: 'SAU Hello',
-            body: 'Wellcome To Thailand',
-            image: Image.asset(
-              'assets/images/pic4.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-            ),
-          ),
-          PageViewModel(
-            title: 'SAU Hello',
-            body: 'Wellcome To Thailand',
-            image: Image.asset(
-              'assets/images/pic5.png',
-              width: MediaQuery.of(context).size.width * 0.6,
-            ),
-          ),
-        ],
-        showSkipButton: true,
-        skip: Text(
-          'ข้าม',
         ),
-        showNextButton: true,
-        next: Icon(
-          Icons.arrow_forward_ios,
+        PageViewModel(
+          title: "Page 2",
+          body: "I love working overtime",
+          image: Image.asset(
+            "assets/images/pic02.png",
+            width: MediaQuery.of(context).size.width * 0.6,
+          ),
         ),
-        showDoneButton: true,
-        done: Text(
-          'หน้าหลัก',
+        PageViewModel(
+          title: "Page 3",
+          body: "I love working overtime",
+          image: Image.asset(
+            "assets/images/pic03.png",
+            width: MediaQuery.of(context).size.width * 0.6,
+          ),
         ),
-        onDone: () {},
-        scrollPhysics: ClampingScrollPhysics(),
+        PageViewModel(
+          title: "Page 4",
+          body: "I love working overtime",
+          image: Image.asset(
+            "assets/images/pic04.png",
+            width: MediaQuery.of(context).size.width * 0.6,
+          ),
+        ),
+        PageViewModel(
+          title: "Page 5",
+          body: "I love working overtime",
+          image: Image.asset(
+            "assets/images/pic05.png",
+            width: MediaQuery.of(context).size.width * 0.6,
+          ),
+        ),
+      ],
+      showSkipButton: true,
+      skip: Text(
+        "Skip",
       ),
-    );
+      showDoneButton: true,
+      done: Text(
+        "Done",
+      ),
+      showNextButton: true,
+      next: Text(
+        "Next",
+      ),
+      onDone: () => Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => Home02UI())),
+      scrollPhysics: ScrollPhysics(parent: BouncingScrollPhysics()),
+    ));
   }
 }

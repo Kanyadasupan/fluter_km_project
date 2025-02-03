@@ -1,26 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_km_project/views/home01_ui.dart';
+import 'package:flutter_km_project/views/home02_ui.dart';
+import 'package:flutter_km_project/views/home04_ui.dart';
+import 'package:flutter_km_project/views/home05_ui.dart';
+import 'package:flutter_km_project/views/home03_ui.dart';
+import 'package:flutter_km_project/views/home06_ui.dart';
 import 'package:flutter_km_project/views/introduction_screen_ui.dart';
 import 'package:flutter_km_project/views/splash_screen_ui.dart';
 
 void main() {
   runApp(
-    FluterKM(),
+    const FlutterKM(),
   );
 }
 
-class FluterKM extends StatefulWidget {
-  const FluterKM({super.key});
+class FlutterKM extends StatefulWidget {
+  const FlutterKM({super.key});
 
   @override
-  State<FluterKM> createState() => _FluterKMState();
+  State<FlutterKM> createState() => _FlutterKMState();
 }
 
-class _FluterKMState extends State<FluterKM> {
+class _FlutterKMState extends State<FlutterKM> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IntroductionScreenUI(),
+      home: Home06Ui(),
     );
   }
 }

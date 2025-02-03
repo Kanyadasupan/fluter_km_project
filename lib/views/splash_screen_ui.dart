@@ -12,43 +12,52 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
   @override
   void initState() {
     Future.delayed(
-        Duration(
-          seconds: 3,
-        ),
-        () => Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => Home01UI()),
-            ));
+      Duration(
+        seconds: 3,
+      ),
+      () => Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => Home01UI())),
+    );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.amber,
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/pic1.png',
+              'assets/images/pic01.png',
               width: MediaQuery.of(context).size.width * 0.55,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.03,
+              height: MediaQuery.of(context).size.height * 0.015,
             ),
             Text(
-              'เรียนรู้การใช้งาน Flutter เบื้องต้น',
+              'Flutter KM Project',
               style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
-                fontSize: MediaQuery.of(context).size.width * 0.02,
-                fontFamily: 'Kanit',
+                fontFamily: "Kanit",
               ),
+            ),
+            Text(
+              'Version 1.0.0',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontFamily: "Kanit",
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.05,
             ),
             CircularProgressIndicator(
               color: Colors.white,
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.03,
             ),
           ],
         ),

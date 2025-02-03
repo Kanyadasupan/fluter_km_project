@@ -34,6 +34,7 @@ dependencies:
   google_fonts: ^6.2.1 #ฟอนต์จากกูเกิล
   font_awesome_flutter: ^10.8.0 #ไอคอนแปลกๆ
   introduction_screen: ^3.1.14
+  salomon_bottom_bar: ^3.3.2
 
 dev_dependencies:
   flutter_test:
@@ -42,7 +43,7 @@ dev_dependencies:
   icons_launcher: ^3.0.0 #ใช้สร้างiconของแอพ
 
 icons_launcher:
-  image_path: "assets/Icon/icon.png"
+  image_path: "assets/icon/icon.png"
   platforms:
     android:
       enable: true
@@ -65,6 +66,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/images/
+    - assets/icon/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
